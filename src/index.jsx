@@ -6,6 +6,6 @@ require("../styles/main.scss");
 // Render the top-level React component
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.js';
+import App from './App.jsx';
 
-ReactDOM.render(<App />, document.getElementById('react-root'));
+ReactDOM.render(<App />, document.getElementById('root'));
