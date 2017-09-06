@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import Header from './comps/Header'
 
 class App extends Component {
   render() {
     return (
-      <h1>Jaam</h1>
+      <Header headTxt="Welcome!" />
     );
   }
 }
