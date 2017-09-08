@@ -5,6 +5,8 @@ class Header extends React.Component {
     return (
       <div className="header">
         <h2>{this.props.headTxt}</h2>
+        <div className="header__avatar"></div>
+        <p>{this.props.tagline}</p>
       </div>
     )
   }

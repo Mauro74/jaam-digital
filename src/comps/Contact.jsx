@@ -3,11 +3,14 @@ import React from 'react';
 class Contact extends React.Component {
 
   render () {
+
+    const emailLink = `mailto:${this.props.email}`;
+    const phoneLink = `tel:+44${this.props.phone}`;
     return (
       <div className="contact-details">
         <h2>Contact me</h2>
-        <p>email: <a href="mailto:maurizioliberato@gmail.com">maurizioliberato@gmail.com</a></p>
-        <p>tel: <a href="tel:+447837474126">+44 (0) 7837 474 126</a></p>
+        <p>email: <a href={emailLink}>{this.props.email}</a></p>
+        <p>tel: <a href={phoneLink}>+44 {this.props.phone}</a></p>
       </div>
     )
   }

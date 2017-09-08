@@ -4,7 +4,7 @@ class Intro extends React.Component {
   render() {
     return (
       <div className="intro">
-        <p>Lorem ipsum dolor sit amet!</p>
+        <p>{this.props.intro}</p>
       </div>
     )
   }

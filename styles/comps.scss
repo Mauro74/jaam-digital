@@ -1,0 +1,17 @@
+
+// HEADER
+$header: "header";
+.#{$header} {
+  padding: 40px 0;
+  background: $j-fresh;
+  color: $j-ivory;
+  text-align: center;
+}
+
+.#{$header}__avatar {
+  width: 150px;
+  height: 150px;
+  margin:20px auto;
+  background: $j-ivory;
+  @include make-round();
+}
