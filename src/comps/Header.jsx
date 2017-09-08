@@ -4,9 +4,9 @@ class Header extends React.Component {
   render() {
     return (
       <div className="header">
-        <h2>{this.props.headTxt}</h2>
+        <h1 className="header__hero">{this.props.headTxt}</h1>
         <div className="header__avatar"></div>
-        <p>{this.props.tagline}</p>
+        <p className="header__tagline"><b>{this.props.tagline}</b></p>
       </div>
     )
   }

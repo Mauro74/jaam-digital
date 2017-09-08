@@ -3,7 +3,7 @@ import Header from './comps/Header.jsx';
 import Intro from './comps/Intro.jsx';
 import Curriculum from './comps/Curr.jsx';
 import Contact from './comps/Contact.jsx';
-// import Job from './comps/Job.jsx';
+import Footer from './comps/Footer.jsx';
 import copy from './copy';
 
 class App extends React.Component {
@@ -16,6 +16,7 @@ render() {
         <Intro intro={copy.intro}/>
         <Curriculum />
         <Contact email={copy.email} phone={copy.phone}/>
+        <Footer copyright={copy.rights} />
       </div>
     );
   }

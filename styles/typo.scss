@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.bitter {
+  font-family: 'Bitter', serif;
+}
+
 body {
-  font: 14px "Helvetica", "Arial", sans-serif;
+  font: 14px 'Open Sans', sans-serif;;
   color: $j-smog;
 }
 
@@ -7,8 +14,14 @@ p {
   margin:0 0 20px 0;
 }
 
+a {
+  color: $j-vermillion;
+  text-decoration: none;
+}
+
 h1,h2,h3 {
   margin: 8px 0 20px;
+  @extend .bitter;
 }
 
 ul li{

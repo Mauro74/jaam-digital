@@ -3,15 +3,88 @@
 $header: "header";
 .#{$header} {
   padding: 40px 0;
-  background: $j-fresh;
   color: $j-ivory;
   text-align: center;
+  position: relative;
+
+  &::before, &::after {
+    width: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    background: $j-fresh;
+  }
+  &::after {
+    background: url('/build/img/liver-water-bg.jpg');
+    opacity: .8;
+    background-position: center 50%;
+  }
 }
 
 .#{$header}__avatar {
   width: 150px;
   height: 150px;
   margin:20px auto;
-  background: $j-ivory;
+  //background: url('/build/img/05.jpg');
+  background: $j-marine;
+  background-position: center center;
+  background-size: 100%;
+  border: solid 8px $j-vermillion;
   @include make-round();
+}
+
+
+.#{$header}__tagline {
+  width:40%;
+  margin: 0 auto;
+}
+.#{$header}__hero {
+  font-size: 5vw;
+  text-shadow: 2px 2px 0 darken($j-fresh, 10%);
+}
+
+
+
+// INTRO
+$intro: "intro";
+.#{$intro} {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background: $j-sunshine;
+  color: $j-smog;
+  h3 {
+    margin: 0;
+  }
+}
+
+
+// CONTACT
+$contact: "contact";
+.#{$contact} {
+  width: 100%;
+  padding: 40px 0;
+  background: $j-clean;
+  text-align: center;
+}
+
+
+// Footer
+$footer: "footer";
+.#{$footer} {
+  padding: 20px;
+  background: $j-smog;
+  @extend .bitter;
+  color: lighten($j-vermillion, 5%);
+  font-size: 0.9em;
+   p{
+     margin: 0;
+   }
 }

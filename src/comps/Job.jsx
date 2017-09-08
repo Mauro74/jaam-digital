@@ -8,10 +8,9 @@ class Job extends React.Component {
 
     return(
       <li>
+        <h3>{details.company}</h3>
         <p>{details.title}</p>
-        <p>{details.company}</p>
-        <p>{details.from}</p>
-        <p>{details.to}</p>
+        <p>from {details.from} to {details.to}</p>
         <p>{details.desc}</p>
       </li>
     )
